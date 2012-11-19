@@ -93,6 +93,11 @@ module Nutrun
     def hide
       "\e[8m#{self}\e[0m"
     end
+    
+    # only works with print, puts outputs a new line that this does not delete
+    def clear_first
+      "\r#{self}"
+    end
   end
 end
 
