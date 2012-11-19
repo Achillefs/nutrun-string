@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["ac@humbuckercode.co.uk"]
   gem.description   = %q{Pimp my console strings}
   gem.summary       = %q{Allows strings to do cool things on the command line}
-  gem.homepage      = ""
+  gem.homepage      = "http://humbuckercode.co.uk/licks/gems/nutrunstring/"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
