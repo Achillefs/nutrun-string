@@ -1,15 +1,13 @@
 require "nutrun-string/version"
 
 module Nutrun
-  class Cli
-    class << self
-      def clear_screen
-        print `clear`
-      end
+  module Cli
+    def clear_screen
+      print `clear`
+    end
 
-      def clear_line
-        print "\r"
-      end
+    def clear_line
+      print "\r"
     end
   end
   
@@ -113,6 +111,5 @@ module Nutrun
   end
 end
 
-class String
-  include Nutrun::String
-end
+String.send(:include,Nutrun::String)
+self.send(:include,Nutrun::Cli)

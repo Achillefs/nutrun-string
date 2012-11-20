@@ -31,10 +31,10 @@ Your console strings can now do boss things such as:
     "OMG!!1!".blink.red.underline
 Check out the source for a full list of features
 
-You can also call on a couple of special console methods pretty self-evident
+You can also call on a couple of special console methods:
 
-    Nutrun::Cli.clear_screen
-    Nutrun::Cli.clear_line
+    clear_screen
+    clear_line
 
 ## Contributing
 
