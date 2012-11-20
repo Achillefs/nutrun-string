@@ -1,6 +1,18 @@
 require "nutrun-string/version"
 
 module Nutrun
+  class Cli
+    class << self
+      def clear_screen
+        print `clear`
+      end
+
+      def clear_line
+        print "\r"
+      end
+    end
+  end
+  
   module String
     def red
       "\e[31m#{self}\e[0m"

@@ -7,6 +7,10 @@ During the last couple of years I've ended up using that little script again and
 
 NOTE: This class will extend Ruby's native String class. Many people don't really like extending base classes, and there are a few long, loooong-winded conversations on the subject on various mailing lists and forums. We don't mind it, and if you don't too, feel free to use this gem.
 
+## Platforms
+
+This gem should work on every POSIX-based OS, but it has only been tested on OSX and Amazon and CentOS Linux
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -26,6 +30,11 @@ Your console strings can now do boss things such as:
 
     "OMG!!1!".blink.red.underline
 Check out the source for a full list of features
+
+You can also call on a couple of special console methods pretty self-evident
+
+    Nutrun::Cli.clear_screen
+    Nutrun::Cli.clear_line
 
 ## Contributing
 
